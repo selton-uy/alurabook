@@ -1,0 +1,129 @@
+.carrossel__titulo {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--laranja);
+    background: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2em 0 0.5em;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    background: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 1em;
+
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    padding: .5em 0;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: .5em 0;
+}
+
+.descricao__texto {
+    margin-bottom: .5em;
+    margin-right: 1em;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card__butoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__butao {
+    background-color: transparent;
+    border: none;
+}
+
+.botoes__ancora {
+    color: var(--branco);
+    padding: 1em 2.2em;
+    background-color: var(--laranja);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo{
+        font-size: 1.625em;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+@media screen and (min-width:1728px) {
+    .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        gap: 5em;
+        align-items: center;
+    }
+    .card__butoes{
+        align-items: center;
+    }
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .descricao__titulo{
+        font-size: 32px;
+    }
+    .descricao__texto{
+        font-size: 16px;
+    }
+    .card{
+        width: 60%;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        width: auto;
+    }
+    
+}
